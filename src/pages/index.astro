@@ -13,37 +13,127 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<h1>Hi, Prashant here 👋 [WIP]</h1>
+				
+				<p>Building <strong>Hiretales</strong> - sharing interview experiences to help others ace their next interview</p>
+			</section>
+
+			<section class="experience">
+				<h2>My Professional Experience</h2>
+				<div class="work-item">
+					<strong>HireTales</strong> - Founder, Building using React Native
+					<span class="date">Jan 2025 - Present</span>
+				</div>
+				<div class="work-item">
+					<strong>The Confession Boxx</strong> - React Native Developer
+					<span class="date">Jan 2024 - Oct 2024</span>
+				</div>
+				<div class="work-item">
+					<strong>RocketMedia Technologies</strong> - Software Dev ( worked on backend , web and mobile)
+					<span class="date">Mar 2021 - Dec 2022</span>
+				</div>
+			</section>
+
+			<section class="blog">
+				<h2>Latest Blog Posts</h2>
+				<div class="blog-list">
+					<!-- Blog posts will be loaded here from Hashnode API -->
+					<p>Loading latest posts...</p>
+
+	
+				</div>
+				<a href="/blog" class="view-all">View all posts →</a>
+			</section>
+
+			<section class="skills">
+				<h2>Skills</h2>
+				<div class="skill-tags">
+					<span>React</span>
+					<span>React Native</span>
+					<span>TypeScript</span>
+					<span>Firebase</span>
+					<span>Supabase</span>
+					<span>Expo</span>
+				
+				</div>
+			</section>
 		</main>
 		<Footer />
+
+		<style>
+			main {
+				max-width: 700px;
+				margin: 0 auto;
+				padding: 2rem;
+				line-height: 1.6;
+			}
+			
+			.hero {
+				text-align: center;
+				margin-bottom: 3rem;
+			}
+			
+			.hero h1 {
+				font-size: 2.2rem;
+				margin-bottom: 0.5rem;
+			}
+			
+			.hero p {
+				color: #666;
+				margin: 0.5rem 0;
+			}
+			
+			h2 {
+				font-size: 1.4rem;
+				margin: 2rem 0 1rem 0;
+			}
+			
+			.work-item {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 0.8rem;
+				padding: 0.8rem;
+				background: #f8f9fa;
+				border-radius: 6px;
+				font-size: 0.9rem;
+			}
+			
+			.date {
+				color: #666;
+				font-size: 0.9rem;
+			}
+			
+			.blog-list {
+				margin: 1rem 0;
+			}
+			
+			.view-all {
+				color: #007acc;
+				text-decoration: none;
+			}
+			
+			.skill-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+			}
+			
+			.skill-tags span {
+				background: #e3f2fd;
+				padding: 0.4rem 0.8rem;
+				border-radius: 20px;
+				font-size: 0.9rem;
+			}
+			
+			@media (max-width: 768px) {
+				.work-item {
+					flex-direction: column;
+				}
+				.date {
+					margin-top: 0.3rem;
+				}
+			}
+		</style>
 	</body>
 </html>
