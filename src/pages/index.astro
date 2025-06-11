@@ -6,6 +6,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 import { getLatestPosts } from '../utils.js';
 const latestPosts = await getLatestPosts(3); // fetch top 3
+
+
+
 ---
 
 <!doctype html>
@@ -75,19 +78,31 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 
 			<section class="side-projects">
   <h2>Side Projects</h2>
-  <div class="project-list">
-    <div class="project-item">
-      <strong>Super Happy</strong> <span class="niche">| Mental health app</span>
-      <div class="tech">React Native, TanStack Query, Supabase</div>
-    </div>
-    <div class="project-item">
-      <strong>Confession Boxx</strong> <span class="niche">| Anonymity-based community</span>
-      <div class="tech">React Native, Firebase</div>
-    </div>
-    <div class="project-item">
-      <strong>Krishna AI</strong> <span class="niche">| Devotional chat experience</span>
-      <div class="tech">React Native, OpenAI API, Expo</div>
-    </div>
+ 
+
+	
+
+	<div class="project-item">
+  <a href="https://play.google.com/store/apps/details?id=com.superhappy&hl=en_IN" target="_blank" rel="noopener" class="project-link">
+    <strong>Super Happy</strong> <span class="niche">| Mental health app</span> <span class="arrow">↗</span>
+    <div class="tech">React Native, TanStack Query, Supabase</div>
+  </a>
+</div>
+	<div class="project-item">
+  <a href="https://github.com/Prashantrajput11/krishnaAI" target="_blank" rel="noopener" class="project-link">
+    <strong>Krishna AI</strong> <span class="niche">| Devotional chat experience</span> <span class="arrow">↗</span>
+    <div class="tech">React Native, Zustand, OpenAI API</div>
+  </a>
+</div>
+	<div class="project-item">
+  <a href="https://github.com/Prashantrajput11/fullstackecom" target="_blank" rel="noopener" class="project-link">
+    <strong>Ecomm App</strong> <span class="niche">| Full Stack Mobile Ecommerce App</span> <span class="arrow">↗</span>
+    <div class="tech">React Native, Drizzle ORM, Express, Genezio</div>
+  </a>
+</div>
+
+   
+   
   </div>
 </section>
 
@@ -99,7 +114,8 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   <div class="blog-list">
     {latestPosts.map(post => (
       <div class="blog-preview">
-        <a href={post.slug}>
+       <a href={`/blog/${post.id}/`}>
+
           <strong>{post.data.title}</strong>
         </a>
         <div class="meta">{post.data.pubDate.toDateString()}</div>
@@ -118,6 +134,8 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 					<span>Firebase</span>
 					<span>Supabase</span>
 					<span>Expo</span>
+					<span>Genezio</span>
+					<span>Genezio</span>
 				
 				</div>
 			</section>
@@ -239,6 +257,8 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 	align-items: flex-start;
 	word-break: break-word;
 	width: 100%;
+	margin-bottom: 1.5rem; /* ADD THIS */
+	
 }
 
 .project-list, .blog-list {
@@ -273,7 +293,26 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   padding: 0.8rem;
   border-radius: 6px;
   font-size: 0.9rem;
+  transition: background 0.2s;
 }
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-link:hover {
+  background: #eef1f4;
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  color: tomato;
+}
+
 
 .niche {
   color: #555;
@@ -298,10 +337,10 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 				margin: 1rem 0;
 			}
 			
-			.view-all {
+			/* .view-all {
 				color: #007acc;
 				text-decoration: none;
-			}
+			} */
 			
 			.skill-tags {
 				display: flex;
@@ -319,6 +358,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 			@media (max-width: 768px) {
 				.work-item {
 					flex-direction: column;
+				
 				}
 				.date {
 					margin-top: 0.3rem;

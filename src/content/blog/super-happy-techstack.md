@@ -1,8 +1,9 @@
 ---
 title: "From Idea to Play Store: My Journey Creating a Mental Health App"
 description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 22 2022"
+pubDate: "May 30 2025"
 # heroImage: "../../assets/blog-placeholder-2.jpg"
+slug: /blog/super-happy-techstack/
 ---
 
 The Idea Behind the App
