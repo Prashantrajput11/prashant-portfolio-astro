@@ -20,11 +20,14 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 		<Header />
 		<main>
 		<section class="hero">
-  <h1>Hey, I’m Prashant 👋</h1>
+  <h1>
+  Hey, I’m <span class="diagonal-highlight">Prashant</span> 👋
+</h1>
+
   
   <p>I’m currently building <strong>Hiretales</strong> — a platform where people share real interview experiences to help others prepare better.</p>
   
-  <p>I'm passionate about creating fun and meaningful products. With <strong>92+ GitHub repositories</strong>, I’ve worked across the web, mobile, tablet interfaces, and Backend-as-a-Service platforms.</p>
+  <p>I'm passionate about creating fun and meaningful products. With <strong>92+ GitHub repositories</strong>, I’ve built, broked and fixed stuff across the web, mobile, tablet interfaces, and i love using BaaS to ship MVPs faster.</p>
 </section>
 
 <section class="social-links">
@@ -155,6 +158,8 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 					<span>SQL</span>
 					<span>PostgreSql</span>
 					<span>NeonDB</span>
+					<span> Amazon Dynamo DB</span>
+					<span> Amazon Cloudwatch</span>
 				
 				</div>
 			</section>
@@ -170,7 +175,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 			}
 			
 			.hero {
-				text-align: center;
+				/* text-align: center; */
 				margin-bottom: 3rem;
 			}
 			
@@ -198,6 +203,24 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
+
+ .diagonal-highlight {
+    position: relative;
+    display: inline-block;
+    padding: 0 4px;
+    z-index: 1;
+  }
+
+  .diagonal-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, tomato 0%, transparent 100%);
+    z-index: -1;
+  }
 
 .community-images {
   display: flex;
@@ -329,16 +352,17 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1rem; /* ensures vertical spacing between items */
 }
 
+
 .project-item {
-  background: #f8f9fa;
-  padding: 0.8rem;
-  border-radius: 6px;
+  /* background: #f8f9fa; REMOVE THIS */
+  padding: 0.8rem 0;
+  border-bottom: 1px dotted tomato ; /* ADD THIS */
   font-size: 0.9rem;
-  /* transition: background 0.2s; */
 }
+
 
 .project-link {
   text-decoration: none;
