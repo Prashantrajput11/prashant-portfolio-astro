@@ -50,7 +50,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 			<div class="work-item">
   <div class="work-left">
     <strong>The Confession Boxx</strong>
-    <div class="role">Founder, Building using React Native</div>
+    <div class="role">React Native Engineer</div>
   </div>
   <div class="date">Jan 2024 – Sept 2024</div>
 </div>
@@ -84,19 +84,19 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 
 	<div class="project-item">
   <a href="https://play.google.com/store/apps/details?id=com.superhappy&hl=en_IN" target="_blank" rel="noopener" class="project-link">
-    <strong>Super Happy</strong> <span class="niche">| Mental health app</span> <span class="arrow">↗</span>
+    <strong>Super Happy</strong> <span class="niche">| Mental health app</span> 
     <div class="tech">React Native, TanStack Query, Supabase</div>
   </a>
 </div>
 	<div class="project-item">
   <a href="https://github.com/Prashantrajput11/krishnaAI" target="_blank" rel="noopener" class="project-link">
-    <strong>Krishna AI</strong> <span class="niche">| Devotional chat experience</span> <span class="arrow">↗</span>
+    <strong>Krishna AI</strong> <span class="niche">| Devotional chat experience</span>
     <div class="tech">React Native, Zustand, OpenAI API</div>
   </a>
 </div>
 	<div class="project-item">
   <a href="https://github.com/Prashantrajput11/fullstackecom" target="_blank" rel="noopener" class="project-link">
-    <strong>Ecomm App</strong> <span class="niche">| Full Stack Mobile Ecommerce App</span> <span class="arrow">↗</span>
+    <strong>Ecomm App</strong> <span class="niche">| Full Stack Mobile Ecommerce App</span> 
     <div class="tech">React Native, Drizzle ORM, Express, Genezio</div>
   </a>
 </div>
@@ -106,6 +106,16 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   </div>
 </section>
 
+<section class="beyond-work">
+  <h2>Beyond Work</h2>
+  <p>When I’m not building products, you’ll find me helping communities, mentoring younger developers . I believe in giving back and growing together.</p>
+  
+  <div class="community-images">
+  <img src="/images/help1.png" alt="Community Help 1" />
+  <img src="/images/help2.png" alt="Community Help 2" />
+</div>
+
+</section>
 
 		
 
@@ -128,6 +138,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 			<section class="skills">
 				<h2>Skills</h2>
 				<div class="skill-tags">
+					<span>Javascript</span>
 					<span>React</span>
 					<span>React Native</span>
 					<span>TypeScript</span>
@@ -135,7 +146,15 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 					<span>Supabase</span>
 					<span>Expo</span>
 					<span>Genezio</span>
-					<span>Genezio</span>
+					<span>Drizzle ORM</span>
+					<span>Node Js</span>
+					<span>Express JS</span>
+					<span>Xcode</span>
+					<span>Androi Studio</span>
+					<span>Git & Github</span>
+					<span>SQL</span>
+					<span>PostgreSql</span>
+					<span>NeonDB</span>
 				
 				</div>
 			</section>
@@ -169,6 +188,31 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 				font-size: 1.4rem;
 				margin: 2rem 0 1rem 0;
 			}
+
+			.beyond-work {
+  margin-top: 2.5rem;
+}
+
+.beyond-work p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.community-images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.community-images img {
+  max-width: 100%;
+  width: 48%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 			.social-links {
   text-align: center;
@@ -293,7 +337,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   padding: 0.8rem;
   border-radius: 6px;
   font-size: 0.9rem;
-  transition: background 0.2s;
+  /* transition: background 0.2s; */
 }
 
 .project-link {
