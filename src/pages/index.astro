@@ -221,16 +221,31 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 }
 
 			
-			.work-item {
+			/* .work-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.8rem;
   padding: 0.8rem;
-  /* background: #f8f9fa; */
+  background: #f8f9fa;
   border-radius: 6px;
   font-size: 0.9rem;
+} */
+
+.work-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	word-break: break-word;
+	width: 100%;
 }
+
+.project-list, .blog-list {
+	width: 100%;
+	overflow-x: hidden;
+}
+
 
 .work-left {
   display: flex;
