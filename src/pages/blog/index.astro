@@ -10,7 +10,12 @@ import { Image } from 'astro:assets';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+
+console.log("blogs", posts.length)
 ---
+
+
+
 
 <!doctype html>
 <html lang="en">

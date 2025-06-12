@@ -1,9 +1,9 @@
 ---
-title: "7 things I learnt giving interviews in the last 7 months"
+title: "3 years in IT - my learnings"
 description: "Lorem ipsum dolor sit amet"
-pubDate: "Sept 30 2024"
+pubDate: "Jun 11 2025"
 # heroImage: "../../assets/blog-placeholder-2.jpg"
-slug: /blog/supabase-edge-functions/
+slug: /blog/3-years-in-it/
 ---
 
 ## NOTE

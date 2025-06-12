@@ -1,7 +1,7 @@
 // src/utils/getLatestPosts.ts
 import { getCollection } from "astro:content";
 
-export async function getLatestPosts(limit = 3) {
+export async function getLatestPosts(limit = 4) {
 	const posts = await getCollection("blog");
 	return posts
 		.sort(
