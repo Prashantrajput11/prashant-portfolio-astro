@@ -1,7 +1,7 @@
 ---
 title: "Pointers in golang"
 description: "Lorem ipsum dolor sit amet"
-pubDate: "Jun 11 2025"
+pubDate: "Jun 19 2025"
 # heroImage: "../../assets/blog-placeholder-2.jpg"
 slug: /blog/pointers-in-golang/
 ---
