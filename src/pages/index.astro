@@ -138,31 +138,56 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   <a href="/blog" class="view-all">View all posts →</a>
 </section>
 
-			<section class="skills">
-				<h2>Skills</h2>
-				<div class="skill-tags">
-					<span>Javascript</span>
-					<span>React</span>
-					<span>React Native</span>
-					<span>TypeScript</span>
-					<span>Firebase</span>
-					<span>Supabase</span>
-					<span>Expo</span>
-					<span>Genezio</span>
-					<span>Drizzle ORM</span>
-					<span>Node Js</span>
-					<span>Express JS</span>
-					<span>Xcode</span>
-					<span>Androi Studio</span>
-					<span>Git & Github</span>
-					<span>SQL</span>
-					<span>PostgreSql</span>
-					<span>NeonDB</span>
-					<span> Amazon Dynamo DB</span>
-					<span> Amazon Cloudwatch</span>
-				
-				</div>
-			</section>
+		<section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-group">
+    <h3>Frontend</h3>
+    <div class="skill-tags">
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>React Native</span>
+      <span>TypeScript</span>
+      <span>Tailwind CSS</span>
+      <span>Expo</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h3>Backend</h3>
+    <div class="skill-tags">
+      <span>Node.js</span>
+      <span>Express.js</span>
+      <span>Firebase</span>
+      <span>Supabase</span>
+      <span>Genezio</span>
+      <span>Drizzle ORM</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h3>Databases</h3>
+    <div class="skill-tags">
+      <span>SQL</span>
+      <span>PostgreSQL</span>
+      <span>NeonDB</span>
+      <span>Amazon DynamoDB</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h3>Tools & DevOps</h3>
+    <div class="skill-tags">
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>Xcode</span>
+      <span>Android Studio</span>
+      <span>Postman</span>
+      <span>Insomnia</span>
+      <span>Amazon CloudWatch</span>
+    </div>
+  </div>
+</section>
+
 		</main>
 		<Footer />
 
@@ -179,7 +204,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 				margin-bottom: 3rem;
 			}
 			
-			.hero h1 {
+			.hero h1 {  
 				font-size: 2.2rem;
 				margin-bottom: 0.5rem;
 			}
@@ -235,6 +260,17 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+.skill-group {
+  margin-bottom: 1.5rem;
+}
+
+.skill-group h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
 
 
 			.social-links {
@@ -420,7 +456,7 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 				background: #e3f2fd;
 				padding: 0.4rem 0.8rem;
 				border-radius: 20px;
-				font-size: 0.9rem;
+				font-size: 0.8rem;
 			}
 			
 			@media (max-width: 768px) {
