@@ -38,6 +38,13 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
   <a href="https://peerlist.io/theawesomedev" target="_blank" rel="noopener">Peerlist</a>
 </section>
 
+<section class="resume-download">
+  <a class="download-btn" href="/prashant_react_native_3yoe.pdf" download>
+    📄 Download My Resume
+  </a>
+</section>
+
+
 
 
 			<section class="experience">
@@ -246,6 +253,28 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
     background: linear-gradient(135deg, tomato 0%, transparent 100%);
     z-index: -1;
   }
+
+  .resume-download {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.download-btn {
+  background-color: tomato;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #d83c1c;
+}
+
 
 .community-images {
   display: flex;
