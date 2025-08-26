@@ -41,7 +41,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				max-width: 720px;
 				margin: 0 auto;
 				padding: 2em 1em 3em;
-				color: rgb(var(--gray-dark));
+				/* color: rgb(var(--gray-dark)); */
+				color: "green";
 			}
 			
 			.title {
@@ -49,6 +50,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 0;
 				text-align: center;
 				line-height: 1.2;
+				color : "white"
 			}
 			
 			.title h1 {
@@ -58,7 +60,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				/* color: rgb(var(--gray)); */
 				font-size: 0.9rem;
 			}
 			
@@ -96,7 +98,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 	<body>
-		<Header />
+		<!-- <Header /> -->
 		<main>
 			<article>
 				{heroImage && (
@@ -116,7 +118,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+						<h1 style={{color : "	white"}}>{title}</h1>
 						<hr />
 					</div>
 					<slot />
