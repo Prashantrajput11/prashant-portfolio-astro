@@ -20,8 +20,8 @@ const latestPosts = await getLatestPosts(3); // fetch top 3
 		<Header />
 		<main>
 		<section class="hero">
-  <h1>
-  Hey, I’m <span class="diagonal-highlight">Prashant</span> 👋
+  <h1 style={{	color: "#48BB78"}}>
+  Hey, I’m Prashant</span> 👋
 </h1>
 
   
@@ -45,7 +45,7 @@ I'm a full stack mobile app developer passionate about building products that so
 
 
 			<section class="experience">
-				<h2>My Professional Experience</h2>
+				<h2 style={{	color: "white"}} >My Professional Experience</h2>
 				<div class="work-item">
   <div class="work-left">
     <strong>HireTales</strong>
@@ -56,26 +56,43 @@ I'm a full stack mobile app developer passionate about building products that so
 
 			<div class="work-item">
   <div class="work-left">
-    <strong>The Confession Boxx</strong>
+<a href="https://www.theconfessionboxx.com/" style="text-decoration: underline; color: white;" target="_blank">
+  The Confession Boxx
+</a>
+
+
     <div class="role">React Native Engineer</div>
   </div>
   <div class="date">Jan 2024 – Present</div>
+  <p style= {{color : "white", fontSize : "1.1rem"}}>Architected core engagement features for 40k+ users, including real-time chat (Firebase/Socket.io) and push notifications. I engineered the app's monetization with Razorpay/AdMob and optimized performance with React Query to significantly reduce network calls.</p>
 </div>
 			<div class="work-item">
   <div class="work-left">
-    	<strong>RocketMedia Technologies</strong>
+    <a href="https://www.restroworks.com/" style="text-decoration: underline; color: white;" target="_blank">
+  RocketMedia Technologies (acquired by/restroed to RestroWorks)
+</a>
     <div class="role">Software Developer</div>
   </div>
   <div class="date">Mar 2021 - Dec 2022</div>
+
+  <p style= {{color : "white", fontSize : "1.1rem"}}>Engineered and launched key food-tech solutions, including a POS module and mobile apps, supported by a custom component library built from scratch. Developed backend operational logic for attendance, cash settlements, and SMS communications, while mentoring an intern on React Native</p>
 </div>
 
 
 			<div class="work-item">
   <div class="work-left">
-    <strong>NIIT</strong>
-    <div class="role">Associate Software Developer</div>
+   
+        <a href="   http://www.niit.com" style="text-decoration: underline; color: white;" target="_blank">
+  NIIT
+</a>
+
+ 
+    <div class="role">Associate Software Developer (Vendor Role)</div>
+    
   </div>
   <div class="date">Aug 2020 - Mar 2021</div>
+
+  <p style= {{color : "white", fontSize : "1.1rem"}}>Migrated Shell’s (Client) petroleum safety learning platform from legacy Flash to modern React, implementing interactive videos, quizzes, and responsive modules to enhance accessibility, user experience, and training effectiveness
 </div>
 
 			
@@ -83,7 +100,7 @@ I'm a full stack mobile app developer passionate about building products that so
 			</section>
 
 
-			<section class="side-projects">
+			<!-- <section class="side-projects">
   <h2>Side Projects</h2>
  
 
@@ -111,10 +128,10 @@ I'm a full stack mobile app developer passionate about building products that so
    
    
   </div>
-</section>
+</section> -->
 
 <section class="beyond-work">
-  <h2>Beyond Work</h2>
+  <h2 style= {{color : "white", fontSize : "1.1rem"}}>Beyond Work</h2>
   <p>When I’m not building products, you’ll find me helping communities, mentoring younger developers . I believe in giving back and growing together.</p>
   
   <div class="community-images">
@@ -127,7 +144,7 @@ I'm a full stack mobile app developer passionate about building products that so
 		
 
 			<section class="blog">
-  <h2>Latest Blog Posts</h2>
+  <h2 style={{color : "#48BB78"}}>Latest Blog Posts</h2>
   <div class="blog-list">
     {latestPosts.map(post => (
       <div class="blog-preview">
@@ -143,7 +160,7 @@ I'm a full stack mobile app developer passionate about building products that so
 </section>
 
 		<section class="skills">
-  <h2>Skills</h2>
+  <h2 style={{	color: "#48BB78"}}>Skills</h2>
   <div class="skill-group">
     <h3>Frontend</h3>
     <div class="skill-tags">
@@ -227,14 +244,14 @@ I'm a full stack mobile app developer passionate about building products that so
 			}
 
 			.beyond-work {
-  margin-top: 2.5rem;
-}
+        margin-top: 2.5rem;
+      }
 
-.beyond-work p {
-  color: #444;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
+    .beyond-work p {
+      color: #444;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
 
  .diagonal-highlight {
     position: relative;
@@ -289,6 +306,10 @@ I'm a full stack mobile app developer passionate about building products that so
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+.work-detail  {
+  color : "tomato"
+  font-size : 0.8rem
+}
 
 .skill-group {
   margin-bottom: 1.5rem;
@@ -310,7 +331,7 @@ I'm a full stack mobile app developer passionate about building products that so
 }
 
 .social-links a {
-  color: tomato;
+  color: 	 #48BB78;
   text-decoration: none;
   margin: 0 0.3rem;
 }
@@ -359,7 +380,7 @@ I'm a full stack mobile app developer passionate about building products that so
 }
 
 .view-all {
-  color: tomato;
+  color: #48BB78;
   font-size: 0.9rem;
   text-decoration: none;
   display: inline-block;
@@ -405,7 +426,8 @@ I'm a full stack mobile app developer passionate about building products that so
 }
 
 .role {
-  color: #444;
+  color: #48BB78;
+
   font-size: 0.85rem;
   margin-top: 2px;
 }
@@ -476,20 +498,21 @@ I'm a full stack mobile app developer passionate about building products that so
 			} */
 			
 			.skill-tags {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 0.5rem;
-        color : white
-			}
-			
-			.skill-tags span {
-				/* background: #e3f2fd; */
-				background: tomato;
-				padding: 0.4rem 0.8rem;
-				border-radius: 20px;
-				font-size: 0.8rem;
-        color "#fff"
-			}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: white;
+}
+
+.skill-tags span {
+    background: transparent;
+    border: 0.6px solid #48BB78;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px; /* Sharp corners - adjust to 0 for completely sharp */
+    font-size: 0.8rem;
+    color: white;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
 			
 			@media (max-width: 768px) {
 				.work-item {

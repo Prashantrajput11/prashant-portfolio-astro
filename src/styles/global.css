@@ -49,11 +49,12 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background: oklch(10% 0 0);
+	/* background: linear-gradient(var(--gray-gradient)) no-repeat; */
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: oklch(0.708 0 0);
 	font-size: 20px;
 	line-height: 1.7;
 	/* Ensure smooth scrolling and proper mobile rendering */
